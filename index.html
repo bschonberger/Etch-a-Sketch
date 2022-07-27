@@ -16,19 +16,36 @@
   <div class="mainContainer">
 
     <div class="sidebar">
-        <button class="functions" id="pickColor">Pick Color</button>
-        <button class="functions" id="color">Color Mode</button>
+        <button class="functions" id="black">Original</button>
         <button class="functions" id="rainbow">Rainbow Mode</button>
         <button class="functions" id="eraser">Eraser</button>
         <button class="functions" id="reset">Reset</button>
-        <button class="functions" id="pickGrid">Pick Grid</button>
-        <p>Grid Size (js populates this)</p>
-    </div>
+        <button class="functions" id="changeGrid">Change Grid</button>
 
-    <div class="container">
-        <p>JS will populate this</p>
+          <div id="currentSizeBox"> 
+          </div>
+
+          <div id="sizes"> 
+            <div class="flexContainer">
+              <li class ="sizeButton" id="16">16 x 16</li>
+              <li class ="sizeButton" id="32">32 x 32</li>
+              <li class ="sizeButton" id="64">64 x 64</li>
+              <li class ="sizeButton" id="input">
+                <form type="text" onsubmit="getInput();return false">
+                  <input type="text" id="myinput" placeholder="Enter 1-100:">
+              </form>
+            </li>
+            </div>
+          </div>
+        </div>
+
+
+    <div id="grid">
     </div>
 </div>
+
+<script src="javascript.js" defer></script>
+
 
 </body>
 </html>
